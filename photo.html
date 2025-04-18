@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery-KANJURI HIGH SCHOOL</title>
+
+    <!---IONICONS-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+    <header>
+        <div class="section__head">
+            <p>
+               info@kanjurihighschool.ac.ke | 010 000 006 | 0732 100 000
+            </p>
+
+                <ul class="header__socials">
+                    <li>
+                        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                    </li>
+                    <li>
+                        <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                    </li>
+                    <li>
+                        <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                    </li>
+                    <li>
+                        <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+                    </li>
+                </ul>
+
+        </div>
+    </header>
+    <!--END OF HEADER -->
+
+    
+    <!---start NAVBAR-->
+    <nav>
+        <div class="container nav__container">
+            <a href="index2.html" class="nav__logo">
+                <img src="./images/logo-school.png" alt="School Logo">
+                <h4>KANJURI HIGH SCHOOL</h4>
+            </a>
+            <ul class="nav__menu">
+                <li><a href="index2.html"><b>HOME</b></a></li>
+                <li><a href="about.html"><b>ABOUT US</b></a></li>
+                <li><a href="managment.html"><b>MANAGMENT</b></a></li>
+                <li><a href="school.html"><b>THE SCHOOL</b></a></li>
+                <li><a href="photo.html"><b>PHOTO GALLERY</b></a></li>
+                <li><a href="contactus.html"><b>CONTACT US</b></a></li>
+            </ul>
+            <button id="open-menu-btn"><ion-icon name="menu-outline"></ion-icon></button>
+            <button id="close-menu-btn"><ion-icon name="close-outline"></ion-icon></button>
+        </div>
+    </nav>
+
+    <!----END OF NAVBAR -->
+
+<section class="manage__section">
+    <div class="intro__manage">
+        <h4>PHOTO GALLERY</h4>
+    </div>
+</section>
+
+<!---END OF TOP PAGE-->
+
+<div class="gallery-container">
+    <h1>School Photo Gallery</h1>
+    <div class="photo-grid">
+        <div class="photo-item">
+            <img src="images/hon.jpg" alt="School Event 1" onclick="openLightbox('image1.jpg')">
+        </div>
+        <div class="photo-item">
+            <img src="images/blue.jpg" alt="School Building" onclick="openLightbox('image2.jpg')">
+        </div>
+        <div class="photo-item">
+            <img src="images/catchy.jpg" alt="School Bus" onclick="openLightbox('image3.jpg')">
+        </div>
+        <div class="photo-item">
+            <img src="images/hon2.jpg" alt="School Gathering" onclick="openLightbox('image4.jpg')">
+        </div>
+        <div class="photo-item">
+            <img src="images/children.jpeg" alt="Aerial View" onclick="openLightbox('image5.jpg')">
+        </div>
+        <div class="photo-item">
+            <img src="images/catchy.jpg" alt="Another Event" onclick="openLightbox('image6.jpg')">
+        </div>
+        <div class="photo-item">
+            <img src="images/karate3.jpg" alt="Another Event" onclick="openLightbox('image6.jpg')">
+        </div>
+        <div class="photo-item">
+            <img src="images/hon2.jpg" alt="Another Event" onclick="openLightbox('image6.jpg')">
+        </div>
+        <div class="photo-item">
+            <img src="images/karate2.jpg" alt="Another Event" onclick="openLightbox('image6.jpg')">
+        </div>
+        <div class="photo-item">
+            <img src="images/bors2.jpg" alt="Another Event" onclick="openLightbox('image6.jpg')">
+        </div>
+        <div class="photo-item">
+            <img src="images/hon2.jpg" alt="Another Event" onclick="openLightbox('image6.jpg')">
+        </div>
+        <div class="photo-item">
+            <img src="images/karate1.jpg" alt="Another Event" onclick="openLightbox('image6.jpg')">
+        </div>
+        <div class="photo-item">
+            <img src="images/karate2.jpg" alt="Another Event" onclick="openLightbox('image6.jpg')">
+        </div>
+        <div class="photo-item">
+            <img src="images/bors2.jpg" alt="Another Event" onclick="openLightbox('image6.jpg')">
+        </div>
+        <div class="photo-item">
+            <img src="images/hon2.jpg" alt="Another Event" onclick="openLightbox('image6.jpg')">
+        </div>
+        <div class="photo-item">
+            <img src="images/karate1.jpg" alt="Another Event" onclick="openLightbox('image6.jpg')">
+        </div>
+        </div>
+
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="lightbox-close">&times;</span>
+        <img id="lightbox-image" class="lightbox-content">
+    </div>
+</div>
+
+
+<!-----START OF FOOTER-->
+<section class="last__page">
+    <div class="copyright">
+        <h4>Copyright &copy; Kanjuri High school</h4>
+    </div>
+</section>
+
+<script src="main2.js"></script>
+</body>
+</html>
